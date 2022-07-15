@@ -1,12 +1,25 @@
 <template>
-  <div class="entry">
-    <h1>Gratitude!</h1>
+  <div class="entry" v-if="entry">
+    {{ entry }}
+    <div class="info">
+      <div class="author">
+        {{ author }}
+      </div>
+      <div class="date">
+        {{ date }}
+      </div>
+    </div>
   </div>
+
 </template>
 
 <script>
 export default {
-
+  props: {
+    entry: String,
+    author: String,
+    date: String
+  }
 }
 </script>
 
@@ -19,7 +32,7 @@ export default {
   margin: 1rem 0;
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
   height: 7.5rem;
   align-items: stretch;
   box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);

@@ -10,6 +10,7 @@ const getCollection = (c, q, o) => {
 
   // collection reference
   let colRef = collection(db, c)
+  console.log('getCollection 1', colRef)
 
   if (q) {
     // console.log('getCollection composable query:', ...q)

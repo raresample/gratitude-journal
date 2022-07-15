@@ -1,6 +1,12 @@
 <template>
   <div class="home">
-    <GratitudeCard />
+    <GratitudeCard 
+      v-for="entry in entries"
+      :key="entry.id"
+      :entry="entry.entry"
+      :author="entry.userUid"
+      :date="entry.created"
+    />
     <AddPost />
   </div>
 </template>
@@ -21,23 +27,23 @@ export default {
     const { user } = getUser()
     const order = ref('asc')
 
-    const { documents: cities } = getCollection(
-      'cities',
+    const { documents: entries } = getCollection(
+      'entries',
       ['userUid', '==', user.value.uid],
       order.value
       )
 
-    const handleDelete = (city) => {
-      const docRef = doc(db, 'cities', city.id)
+    const handleDelete = (entry) => {
+      const docRef = doc(db, 'entries', entry.id)
 
       deleteDoc(docRef)
     }
 
-    const handleUpdate = (city) => {
-      const docRef = doc(db, 'cities', city.id)
+    const handleUpdate = (entry) => {
+      const docRef = doc(db, 'entries', entry.id)
 
       updateDoc(docRef, {
-        isFav: !city.isFav
+        isFav: !entry.isFav
       })
     }
 
@@ -51,7 +57,7 @@ export default {
     }
 
     return { 
-      cities,
+      entries,
       handleDelete,
       handleUpdate,
       capitalizeCity,
