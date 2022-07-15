@@ -9,6 +9,11 @@
         {{ date }}
       </div>
     </div>
+    <div class="delete">
+      <div class="trash" @click="$emit('delete')">
+        <span class="material-icons">delete</span>
+      </div>
+    </div>
   </div>
 
 </template>

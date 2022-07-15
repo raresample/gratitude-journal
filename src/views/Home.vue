@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <GratitudeCard 
+      @delete="handleDelete(entry)"
       v-for="entry in entries"
       :key="entry.id"
       :entry="entry.entry"
