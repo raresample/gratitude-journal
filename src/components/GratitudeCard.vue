@@ -6,7 +6,7 @@
         {{ author }}
       </div>
       <div class="date">
-        {{ date }}
+        {{ displayDate }}
       </div>
     </div>
     <div class="delete">
@@ -19,11 +19,22 @@
 </template>
 
 <script>
+import { computed } from '@vue/reactivity';
+
 export default {
   props: {
     entry: String,
     author: String,
     date: String
+  },
+  setup(props) {
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    
+    const displayDate = computed(() => {
+      return props.date.toDate().toLocaleDateString('en-us', options)
+    })
+
+    return { options, displayDate }
   }
 }
 </script>
