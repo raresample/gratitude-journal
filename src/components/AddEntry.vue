@@ -2,11 +2,11 @@
   <form @submit.prevent="handleSubmit">
     <h3>Add a New Entry</h3>
 
-    <input
-      type="text" 
+    <textarea
+      rows="3"
       name="entry" 
       v-model="entry" 
-      required>
+      required></textarea>
 
     <button class="add-entry">Add Entry</button>
   </form>
@@ -49,17 +49,17 @@ export default {
 
 <style>
 form {
-  padding: 2rem 0.5rem;
+  padding: 1.5rem 1rem;
   margin-top: 10px;
   border: 1px dashed #c3c8ce;
 }
 
-.api-error {
-  color: lightcoral;
-}
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 
-.shrink {
-  margin-bottom: 0;
+  width: 100%;
 }
 
 .add-entry:hover {
