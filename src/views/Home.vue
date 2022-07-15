@@ -7,12 +7,12 @@
       :author="entry.userUid"
       :date="entry.created"
     />
-    <AddPost />
+    <AddEntry />
   </div>
 </template>
 
 <script>
-import AddPost from '@/components/AddPost'
+import AddEntry from '@/components/AddEntry'
 import GratitudeCard from '../components/GratitudeCard.vue'
 import getCollection from '@/composables/getCollection'
 import { db } from '../firebase/config'
@@ -22,7 +22,7 @@ import { ref } from '@vue/reactivity'
 
 export default {
   name: 'Home',
-  components: { AddPost, GratitudeCard },
+  components: { AddEntry, GratitudeCard },
   setup() {
     const { user } = getUser()
     const order = ref('asc')
@@ -47,20 +47,10 @@ export default {
       })
     }
 
-    const capitalizeCity = (str) => {
-      return str.replace(
-        /\w\S*/g,
-        function(txt) {
-          return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-        }
-      );
-    }
-
     return { 
       entries,
       handleDelete,
       handleUpdate,
-      capitalizeCity,
       order 
     }
   }
