@@ -16,13 +16,16 @@ export default {
 <style>
 body {
   background: #f2f2f2;
+  background: #555;
+  /* background-image: url('./assets/flowers.jpg'); */
   /* background: #555; */
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: #fff;
   /* color: white; */
 }
 .container {
@@ -38,7 +41,7 @@ form input {
   margin-bottom: 20px;
 }
 button {
-  background: #0ec58e;
+  background: cornflowerblue;
   color: #fff;
   border: 0;
   border-radius: 6px;

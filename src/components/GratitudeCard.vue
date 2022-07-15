@@ -1,6 +1,8 @@
 <template>
-  <div class="entry" v-if="entry">
-    {{ entry }}
+  <div class="card" v-if="entry">
+    <div class="entry">
+      {{ entry }}
+    </div>
     <div class="info">
       <div class="author">
         {{ author }}
@@ -40,9 +42,9 @@ export default {
 </script>
 
 <style>
-.entry {
+.card {
   background: white;
-  /* color: #2c3e50; */
+  color: #2c3e50;
   /* border-radius: 5px; */
   /* box-shadow: 0 0 3px rgba(0,0,0,0.25); */
   margin: 1rem 0;
@@ -52,6 +54,16 @@ export default {
   height: 10rem;
   align-items: stretch;
   box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
+.entry {
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.info {
+  font-size: 0.875rem;
 }
 
 .material-icons {

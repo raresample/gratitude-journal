@@ -5,7 +5,7 @@
 
       <!-- for logged in users -->
       <div v-if="user">
-        <router-link to="/">Home</router-link>
+        <!-- <router-link to="/">Home</router-link> -->
         <button @click="handleClick" class="logout">Logout</button>
       </div>
       
@@ -17,7 +17,7 @@
     </nav>
 
     <!-- show user email -->
-    <div v-if="user">logged in as {{ user.email }}</div>
+    <!-- <div v-if="user">logged in as {{ user.email }}</div> -->
   </div>
 </template>
 
