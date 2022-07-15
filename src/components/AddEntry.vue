@@ -49,17 +49,22 @@ export default {
 
 <style>
 form {
-  padding: 1.5rem 1rem;
+  background: #555;
+  padding: 1rem;
   margin-top: 10px;
   border: 1px dashed #c3c8ce;
+}
+
+h3 {
+  margin-top: 0;
 }
 
 textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .add-entry:hover {
@@ -68,7 +73,7 @@ textarea {
 
 @media (min-width: 480px) {
   form {
-    padding-left: 1.5rem;
+    /* padding-left: 1.5rem; */
   }
 }
 </style>

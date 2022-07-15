@@ -17,7 +17,7 @@ export default {
 body {
   background: #f2f2f2;
   background: #555;
-  /* background-image: url('./assets/flowers.jpg'); */
+  background-image: url('./assets/flowers.jpg');
   /* background: #555; */
 }
 #app {
