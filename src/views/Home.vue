@@ -6,6 +6,7 @@
       :entry="entry.entry"
       :author="entry.userUid"
       :date="entry.created"
+
     />
     <AddEntry />
   </div>

@@ -3,10 +3,12 @@
     {{ entry }}
     <div class="info">
       <div class="author">
-        {{ author }}
+        by {{ author }}
       </div>
       <div class="date">
-        {{ date }}
+        {{ date.toDate().toLocaleDateString('en-us', options) }} 
+        <!-- at
+        {{ date.toDate().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }) }} -->
       </div>
     </div>
   </div>
@@ -19,6 +21,11 @@ export default {
     entry: String,
     author: String,
     date: String
+  },
+  setup() {
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+    return { options }
   }
 }
 </script>
