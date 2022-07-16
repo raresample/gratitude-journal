@@ -50,7 +50,7 @@ export default {
   /* border-radius: 5px; */
   /* box-shadow: 0 0 3px rgba(0,0,0,0.25); */
   margin: 1rem 0;
-  padding: 1rem;
+  padding: 1.5rem;
   display: grid;
   grid-template-rows: repeat(2, minmax(0, 1fr));
   height: 10rem;
@@ -61,7 +61,7 @@ export default {
 .entry {
   font-family: 'Edu NSW ACT Foundation', cursive;
   font-weight: 600;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 .bottom {

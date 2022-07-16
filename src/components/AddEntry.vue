@@ -1,6 +1,6 @@
 <template>
   <form @submit.prevent="handleSubmit">
-    <h3>Something you're grateful for:</h3>
+    <h3>Something I'm grateful for:</h3>
 
     <textarea
       rows="3"
@@ -50,7 +50,7 @@ export default {
 <style>
 form {
   background: #555;
-  padding: 1rem;
+  padding: 1.5rem;
   /* margin-top: 10px; */
   border: 1px dashed #c3c8ce;
 }
