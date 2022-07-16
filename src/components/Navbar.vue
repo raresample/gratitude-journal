@@ -58,6 +58,7 @@ nav {
 nav h1 {
   margin-right: auto;
   margin-bottom: 0;
+  text-shadow: 0 0 3px chartreuse
 }
 nav a {
   margin-left: 16px;
