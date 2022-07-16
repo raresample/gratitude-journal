@@ -68,4 +68,18 @@ export default {
 .order-select span {
   padding-right: 0.5rem;
 }
+
+@media (min-width: 50em) {
+  .home {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .card {
+    margin: 0;
+  }
+  .navbar {
+    margin-bottom: 1rem;
+  }
+}
 </style>

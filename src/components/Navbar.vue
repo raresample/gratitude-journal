@@ -79,9 +79,18 @@ nav + p {
   margin-bottom: 30px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 30rem) {
   .navbar {
     margin: 0 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 50rem) {
+  h1 {
+    font-size: 3rem;
   }
 }
 </style>

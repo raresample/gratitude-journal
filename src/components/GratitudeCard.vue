@@ -3,17 +3,19 @@
     <div class="entry">
       {{ entry }}
     </div>
-    <div class="info">
-      <div class="author">
-        {{ author }}
+    <div class="bottom">
+      <div class="info">
+        <div class="author">
+          by {{ author }}
+        </div>
+        <div class="date">
+          {{ displayDate }}
+        </div>
       </div>
-      <div class="date">
-        {{ displayDate }}
-      </div>
-    </div>
-    <div class="delete">
-      <div class="trash" @click="$emit('delete')">
-        <span class="material-icons">delete</span>
+      <div class="delete">
+        <div class="trash" @click="$emit('delete')">
+          <span class="material-icons">delete</span>
+        </div>
       </div>
     </div>
   </div>
@@ -62,8 +64,19 @@ export default {
   font-size: 1.125rem;
 }
 
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: end;
+}
+
 .info {
   font-size: 0.875rem;
+}
+
+.delete {
+  align-content: end;
+  text-align: right;
 }
 
 .material-icons {

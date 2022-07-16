@@ -14,11 +14,27 @@ export default {
 </script>
 
 <style>
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
 body {
   background: #f2f2f2;
   background: #555;
   background-image: url('./assets/flowers.jpg');
-  /* background: #555; */
+  /* background-repeat: no-repeat; */
+  background-attachment: fixed;
+  background-position: center;
 }
 #app {
   /* font-family: Avenir, Helvetica, Arial, sans-serif; */
@@ -29,8 +45,8 @@ body {
   /* color: white; */
 }
 .container {
-  max-width: 560px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 1rem auto;
 }
 form label, form input {
   display: block;
@@ -47,5 +63,12 @@ button {
   border-radius: 6px;
   padding: 6px;
   cursor: pointer;
+}
+
+@media (min-width: 480px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 </style>
