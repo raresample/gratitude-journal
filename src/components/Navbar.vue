@@ -60,6 +60,8 @@ nav {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  padding: 1.5rem;
+  box-sizing: border-box;
 }
 nav h1 {
   margin-right: auto;
