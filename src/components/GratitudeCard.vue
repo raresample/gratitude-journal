@@ -35,7 +35,8 @@ export default {
   props: {
     entry: String,
     author: String,
-    date: String
+    date: String,
+    likes: String
   },
   setup(props) {
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
