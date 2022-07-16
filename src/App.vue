@@ -46,7 +46,7 @@ body {
 }
 .container {
   max-width: 1200px;
-  margin: 1rem auto;
+  margin: 1rem;
 }
 form label, form input {
   display: block;
