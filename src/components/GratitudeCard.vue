@@ -3,6 +3,9 @@
     <div class="entry">
       {{ entry }}
     </div>
+    <div class="likes">
+      Likes: {{ likes }}
+    </div>
     <div class="bottom">
       <div class="info">
         <div class="author">
@@ -13,6 +16,9 @@
         </div>
       </div>
       <div class="delete">
+        <div class="like" @click="$emit('like')">
+          <span class="material-icons">thumb_up</span>
+        </div>
         <div class="trash" @click="$emit('delete')">
           <span class="material-icons">delete</span>
         </div>

@@ -30,7 +30,7 @@ export default {
 
       await addDoc(colRef, {
         entry: entry.value,
-        isFav: false,
+        likes: 1,
         userUid: user.value.uid,
         created: serverTimestamp()
       })

@@ -2,9 +2,11 @@
   <div class="home">
     <GratitudeCard 
       @delete="handleDelete(entry)"
+      @like="handleUpdate(entry)"
       v-for="entry in entries"
       :key="entry.id"
       :entry="entry.entry"
+      :likes="entry.likes"
       :author="entry.userUid"
       :date="entry.created"
     />
@@ -44,7 +46,7 @@ export default {
       const docRef = doc(db, 'entries', entry.id)
 
       updateDoc(docRef, {
-        isFav: !entry.isFav
+        likes: entry.likes + 1
       })
     }
 
