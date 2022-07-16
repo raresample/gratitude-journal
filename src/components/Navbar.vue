@@ -51,7 +51,13 @@ export default {
 </script>
 
 <style>
+.navbar {
+  background: black;
+}
+
 nav {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
 }
@@ -82,7 +88,7 @@ nav + p {
 
 @media (min-width: 30rem) {
   .navbar {
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
   }
   h1 {
     font-size: 2rem;

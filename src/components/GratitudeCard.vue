@@ -95,10 +95,10 @@ export default {
   color: #f83f5e;
 }
 
-@media (min-width: 480px) {
+/* @media (min-width: 480px) {
   .main {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-}
+} */
 </style>

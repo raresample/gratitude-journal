@@ -1,6 +1,6 @@
 <template>
+  <Navbar />
   <div class="container">
-    <Navbar />
     <router-view />
   </div>
 </template>
@@ -46,7 +46,7 @@ body {
 }
 .container {
   max-width: 1200px;
-  margin: 1rem;
+  margin: 0 auto;
 }
 form label, form input {
   display: block;
@@ -67,8 +67,8 @@ button {
 
 @media (min-width: 480px) {
   .container {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
   }
 }
 </style>

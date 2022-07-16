@@ -61,14 +61,8 @@ export default {
 </script>
 
 <style>
-.order-select {
-  margin: 0 0 1rem 0;
-  display: flex;
-  justify-content: end;
-}
-
-.order-select span {
-  padding-right: 0.5rem;
+.home {
+  margin: 0 1rem;
 }
 
 @media (min-width: 50em) {
