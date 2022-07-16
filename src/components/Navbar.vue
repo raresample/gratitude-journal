@@ -52,7 +52,7 @@ export default {
 
 <style>
 .navbar {
-  background: black;
+  /* background: black; */
 }
 
 nav {
@@ -66,7 +66,7 @@ nav {
 nav h1 {
   margin-right: auto;
   margin-bottom: 0;
-  text-shadow: 0 0 3px chartreuse
+  text-shadow: 0 0 3px lime
 }
 nav a {
   margin-left: 16px;
@@ -96,9 +96,9 @@ nav + p {
 
 @media (min-width: 50rem) {
   .navbar {
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
   }
-  
+
   h1 {
     font-size: 3rem;
   }
