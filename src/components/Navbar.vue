@@ -60,7 +60,7 @@ nav {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1rem;
   box-sizing: border-box;
 }
 nav h1 {
@@ -89,15 +89,16 @@ nav + p {
 }
 
 @media (min-width: 30rem) {
-  .navbar {
-    /* margin: 0 1rem; */
-  }
   h1 {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 50rem) {
+  .navbar {
+    padding: 1.5rem;
+  }
+  
   h1 {
     font-size: 3rem;
   }
