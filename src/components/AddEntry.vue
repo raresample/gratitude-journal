@@ -69,7 +69,7 @@ textarea {
 }
 
 .add-entry:hover {
-  box-shadow: 3px 2px 2px lawngreen;
+  box-shadow: 3px 2px 2px cyan;
 }
 
 @media (min-width: 480px) {
