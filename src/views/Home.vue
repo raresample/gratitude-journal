@@ -77,5 +77,5 @@ export default {
   .navbar {
     margin-bottom: 1rem;
   }
-}
+} 
 </style>
