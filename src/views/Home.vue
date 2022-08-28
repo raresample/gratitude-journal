@@ -7,7 +7,7 @@
       :key="entry.id"
       :entry="entry.entry"
       :likes="entry.likes"
-      :author="entry.userUid"
+      :author="entry.userEmail"
       :date="entry.created"
     />
     <AddEntry />

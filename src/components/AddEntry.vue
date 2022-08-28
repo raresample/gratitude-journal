@@ -3,7 +3,7 @@
     <h3>Something I'm grateful for:</h3>
 
     <textarea
-      rows="3"
+      rows="5"
       name="entry" 
       v-model="entry" 
       required></textarea>
@@ -32,6 +32,7 @@ export default {
         entry: entry.value,
         likes: 1,
         userUid: user.value.uid,
+        userEmail: user.value.email,
         created: serverTimestamp()
       })
 
@@ -58,6 +59,7 @@ form {
 h3 {
   margin-top: 0;
   margin-bottom: 1rem;
+  line-height: 1.5rem;
 }
 
 textarea {

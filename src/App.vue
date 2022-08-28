@@ -38,7 +38,8 @@ body {
 }
 #app {
   /* font-family: Avenir, Helvetica, Arial, sans-serif; */
-  font-family: 'Inknut Antiqua', 'Eczar', 'Open Sans', sans-serif;
+  /* font-family: 'Inknut Antiqua', 'Eczar', 'Open Sans', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #fff;

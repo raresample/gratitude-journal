@@ -16,9 +16,8 @@
       <div class="delete">
         <div class="like">
           <div class="likes">
-            Likes: {{ likes }}
+            <span class="material-icons" @click="$emit('like')">thumb_up</span> Likes: {{ likes }}
           </div>
-          <span class="material-icons" @click="$emit('like')">thumb_up</span>
         </div>
         <div class="trash" @click="$emit('delete')">
           <span class="material-icons">delete</span>
@@ -62,8 +61,11 @@ export default {
   /* display: grid;
   grid-template-rows: repeat(2, minmax(0, 1fr)); */
   min-height: 10rem;
-  align-items: stretch;
+  /* align-items: stretch; wait why? */
   box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .entry {
@@ -80,7 +82,7 @@ export default {
 }
 
 .info {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -88,6 +90,10 @@ export default {
 
 .info * {
   line-height: 1.5rem;
+}
+
+.likes {
+  font-size: .875rem;
 }
 
 .delete {
@@ -110,4 +116,6 @@ export default {
     padding-right: 2rem;
   }
 } */
+
+
 </style>
