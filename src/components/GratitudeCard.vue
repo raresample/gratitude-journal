@@ -79,6 +79,9 @@ export default {
 
 .info {
   font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .delete {
