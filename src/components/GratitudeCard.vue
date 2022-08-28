@@ -16,7 +16,7 @@
       <div class="delete">
         <div class="like">
           <div class="likes">
-            <span class="material-icons" @click="$emit('like')">thumb_up</span> Likes: {{ likes }}
+            <span class="material-icons like-button" @click="$emit('like')">thumb_up</span> Likes: {{ likes }}
           </div>
         </div>
         <div class="trash" @click="$emit('delete')">
@@ -94,6 +94,11 @@ export default {
 
 .likes {
   font-size: .875rem;
+}
+
+.like-button {
+  position: relative;
+  top: 4px;
 }
 
 .delete {
