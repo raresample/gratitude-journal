@@ -70,6 +70,7 @@ export default {
   font-family: 'Edu NSW ACT Foundation', cursive;
   font-weight: 600;
   font-size: 1.25rem;
+  margin-bottom: 3rem;
 }
 
 .bottom {

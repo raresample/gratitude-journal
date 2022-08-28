@@ -31,7 +31,7 @@ dd {
 body {
   background: #f2f2f2;
   background: #555;
-  background-image: url('./assets/flowers.jpg');
+  background-image: url('./assets/green.jpg');
   /* background-repeat: no-repeat; */
   background-attachment: fixed;
   background-position: center;
