@@ -13,11 +13,11 @@
         </div>
       </div>
       <div class="delete">
-        <div class="like" @click="$emit('like')">
+        <div class="like">
           <div class="likes">
             Likes: {{ likes }}
           </div>
-          <span class="material-icons">thumb_up</span>
+          <span class="material-icons" @click="$emit('like')">thumb_up</span>
         </div>
         <div class="trash" @click="$emit('delete')">
           <span class="material-icons">delete</span>
