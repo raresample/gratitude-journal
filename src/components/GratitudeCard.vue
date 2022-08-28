@@ -85,6 +85,10 @@ export default {
   justify-content: flex-end;
 }
 
+.info * {
+  line-height: 1.5rem;
+}
+
 .delete {
   align-content: end;
   text-align: right;
