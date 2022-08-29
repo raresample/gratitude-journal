@@ -20,7 +20,7 @@
           </div>
         </div>
         <div class="trash" @click="$emit('delete')">
-          <span class="material-icons">delete</span>
+          <span class="material-icons delete-button">delete</span>
         </div>
       </div>
     </div>
@@ -66,6 +66,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 5px solid pink;
 }
 
 .entry {
@@ -102,8 +103,14 @@ export default {
 }
 
 .delete {
-  align-content: end;
   text-align: right;
+}
+
+.delete-button {
+  position: relative;
+  top: 4px;
+  right: -8px;
+  font-size: 1.75rem;
 }
 
 .material-icons {

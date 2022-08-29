@@ -8,7 +8,7 @@
         <!-- <router-link to="/">Home</router-link> -->
         <button @click="handleClick" class="logout">Logout</button>
       </div>
-      
+
       <!-- for logged out users -->
       <div v-if="!user">
         <router-link to="/login">Login</router-link>
