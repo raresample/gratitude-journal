@@ -1,4 +1,4 @@
-# weather-list
+# gratitude-journal
 
 ## Project setup
 ```
